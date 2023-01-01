@@ -103,3 +103,11 @@ input{
     margin-top: -28px;
     padding-left: 10px;
 }
+.thanks{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    word-spacing: 2px;
+    color:rgb(241, 180, 180);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

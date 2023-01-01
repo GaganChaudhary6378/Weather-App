@@ -11,9 +11,11 @@ buttonEl.addEventListener('click',function(){
 fetch(`https://api.weatherapi.com/v1/current.json?key=91e5f2cc26f041a492f145215230101&q=${valueEl}&aqi=no1`)
   .then((response) => response.json())
   .then((data) => {
-        renderWeather(data);
+        renderWeather(data);     
   });
     searchEl.value="";
+    
+    
 })
 
 function renderWeather(data){
@@ -31,7 +33,8 @@ function renderWeather(data){
     </div>
     `;
     weatherDescEl.innerHTML=html;
-
+    
+    
 }
 
 
