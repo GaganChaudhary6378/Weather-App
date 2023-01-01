@@ -8,7 +8,9 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="navbar">Weather App</div>
+    <div class="navbar">Weather App
+        <p class="type-cont">Check your <span class="auto-type"></span></p>
+    </div>
     <div class="outer-div">
         <br>
       <div class="weather-content">
@@ -21,9 +23,19 @@
             <div class="navbar2-el">
                 <p id="weather-city"></p>
             </div>
+            <div id="weather-desc"></div> 
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".auto-type",{
+            strings: ["City","Weather","Now...."],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
     <script src="/index.js"></script>
   </body>
 </html>
